@@ -15,11 +15,11 @@ namespace TowerDefense
         }
 
         public void FireOnInvaders(Invader[] invaders) {
-            for (int i = 0; i < invaders.Length; i++) {
-                Invader invader = invaders[i];
-                // Do stuff with invader
-
-                i++;
+            foreach (Invader invader in invaders) {
+                if(invader.IsActive && _location.InRangeOf(invader.Location, 1)) {
+                    invader.DecreaseHealth(1);
+                    break;
+                }
             }
         }
     }
