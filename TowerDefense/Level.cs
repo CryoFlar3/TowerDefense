@@ -9,7 +9,7 @@ namespace TowerDefense
     internal class Level
     {
         private readonly Invader[] _invaders;
-        public Tower[] Towers { get; private set; }
+        public Tower[] Towers { get; set; }
         public Level(Invader[] invaders) {
             _invaders= invaders;
         }
