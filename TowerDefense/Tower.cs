@@ -11,6 +11,8 @@ namespace TowerDefense
         private const int _range = 1;
         private const int _power = 1;
 
+        private static readonly Random _random = new Random();
+
         private readonly MapLocation _location;
 
         public Tower(MapLocation location) {

@@ -61,7 +61,6 @@ namespace TowerDefense
             {
                 Console.WriteLine("Unhandled Exception");
             }
-            Console.WriteLine("Hello World");
             Console.Read();
         }
     }
